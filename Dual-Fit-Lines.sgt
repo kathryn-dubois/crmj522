@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template SPSS-Version="1.4" date="2022-04-16" description="Scatterplots with Linear and Quadratic Fit Lines Added"  xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-template-3.5.xsd">
+	<setAxisStyle categorical="false" role="x">
+		<axisLabelStyle>
+			<style color="#373F43" color2="transparent" font-size="11pt" font-weight="bold" visible="true"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle categorical="false" role="y">
+		<axisLabelStyle>
+			<style color="#373F43" color2="transparent" font-size="11pt" font-weight="bold" visible="true"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<addFrame count="1" type="visualization">
+		<location bottom="504px" left="0px" right="854px" top="0px"/>
+		<style color="#ffffff" color2="transparent" coordinate="0" number="0" visible="true"/>
+		<style coordinate="1" font-family="SansSerif" font-size="8pt" number="1" pattern="0" stroke-linecap="butt" text-fit="true" visible="true"/>
+	</addFrame>
+	<addFrame count="1" type="graph">
+		<location bottom="99%" left="1%" right="75%" top="7%"/>
+		<style color="#ffffff" color2="transparent" visible="true"/>
+		<style color="#ffffff" color2="transparent" coordinate="1" number="1" visible="true"/>
+	</addFrame>
+	<addFrame count="1" type="title">
+		<location bottom="7%" left="0%" right="100%" top="1%"/>
+		<label><style color="#373F43" color2="transparent" coordinate="0" font-size="12pt" font-weight="bold" number="0" visible="true"/></label>
+	</addFrame>
+	<addFrame count="1" type="labelFrame">
+		<location bottom="52%" left="50%" right="50%" top="50%"/>
+		<label><style color="#373F43" color2="transparent" coordinate="0" number="0" visible="true"/></label>
+	</addFrame>
+	<addFrame count="2" type="labelFrame">
+		<location bottom="52%" left="50%" right="50%" top="50%"/>
+		<label><style color="#373F43" color2="transparent" coordinate="0" number="0" visible="true"/></label>
+	</addFrame>
+	<addFrame count="0" type="statisticsSummary">
+		<location bottom="10%" left="74%" right="99%" top="7%"/>
+		<label><style color="#373F43" coordinate="0" font-size="11pt" margin-left="0pt" number="0" textAlignment="left" visible="true"/></label>
+	</addFrame>
+	<hideFrame count="1" type="legend"/>
+	<setAxisOpposite categorical="false" opposite="false" role="x"/>
+	<setAxisOpposite categorical="false" opposite="false" role="y"/>
+	<setTranspose transpose="false"/>
+	<setAxisScale method="linear" role="x"/>
+	<setAxisScale method="linear" role="y"/>
+	<setTickLabelFormat categorical="false" derived="false" role="x">
+		<format minimumFractionDigits="0" minimumIntegerDigits="0" useGrouping="false"/>
+	</setTickLabelFormat>
+	<setTickLabelAngle categorical="false" derived="false" role="x"/>
+	<setTickLabelFormat categorical="false" derived="false" role="y">
+		<format minimumFractionDigits="1" minimumIntegerDigits="0" useGrouping="false"/>
+	</setTickLabelFormat>
+	<setTickLabelAngle categorical="false" derived="false" role="y"/>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" delta="auto" derived="false" position="outside" role="x" styleOnly="false">
+			<gridLines>
+				<style color="#cccccc" stroke-dasharray="3px,6px" stroke-width="0.5pt" visible="false"/>
+			</gridLines>
+			<markStyle>
+				<style color="#373F43" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#373F43" font-size="10pt" visible="true"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" delta="auto" derived="false" position="outside" role="y" styleOnly="false">
+			<gridLines>
+				<style color="#cccccc" stroke-dasharray="3px,6px" stroke-width="0.5pt" visible="false"/>
+			</gridLines>
+			<markStyle>
+				<style color="#373F43" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#373F43" font-size="10pt" visible="true"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMargin categorical="false" lowerMargin="5%" role="x" upperMargin="5%"/>
+	<setAxisMargin categorical="false" lowerMargin="5%" role="y" upperMargin="10%"/>
+	<addFitLine primary="true" target="pair" type="linear">
+		<style color="#092672" stroke-width="2.5pt" visible="true"/>
+	</addFitLine>
+	<addFitLine primary="true" target="pair" type="quadratic">
+		<style color="#d70033" stroke-width="2.5pt" visible="true"/>
+	</addFitLine>
+	<addFrame count="1" type="legend">
+		<style color="transparent" coordinate="0" number="0" visible="false"/>
+	</addFrame>
+	<addFrame count="2" type="statisticsSummary">
+		<style color="transparent" color2="transparent" visible="true"/>
+	</addFrame>
+	<addFrame count="3" type="statisticsSummary">
+		<style color="transparent" color2="transparent" visible="true"/>
+	</addFrame>
+	<setShowLineMarkers>
+		<style color="#bcbcbc" color2="#bcbcbc" size="4pt" symbol="circle" visible="true"/>
+	</setShowLineMarkers>
+	<setStyle subtype="simple" type="scatter">
+		<style color="#bcbcbc" color2="#bcbcbc" coordinate="0" size="4pt" symbol="circle" visible="true"/>
+	</setStyle>
+</template>
